@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Time Manager</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<strong class="d-block display-4 lead text-white my-5 text-center">Task Manager</strong>
+	<div class="container">
+		
+		<div class="row">
+			<div class="col-md-6 col1">
+				<label for="slct" class="text-white mt-3 mb-2 lead label">Type of Work</label>
+				<center><select id="slct" class="form-control mb-5 bg-dark text-white px-3 select1">
+					<option value="Select">Select Option</option>
+					<option value="Short Task">Short Task</option>
+					<option value="Assignment">Assignment</option>
+					<option value="Short Break">Short Break</option>
+					<option value="Quiz">Quiz</option>
+					<option value="Discussion">Discussion</option>
+					<option value="Solving Time">Solving Time</option>
+				</select></center>
+				<label for="min" class="text-white mb-2 lead label">Time Alloted</label>
+				<center><input type="number" id="min" placeholder="Enter No. of Minutes" class="form-control mb-4 minute text-center bg-dark text-white">
+				<div class="btn-group div1">
+				<button class="btn btn-outline-success d-inline-block set" onclick="fun();">Set</button>
+				<button class="btn btn-outline-danger d-inline-block clear" onclick="fun2();">Clear</button>
+			</div></center>
+		</div>
+			<div class="col-md-6">
+				<p class="lead lead1 text-white text-center mt-4 mb-5" id="content1"></p>
+				<label for="content" class="text-info lead2 ml-5" id="time">Time Remaining</label>
+				<p id="content" class="lead text-white ml-5 mb-5"></p>
+			</div>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
